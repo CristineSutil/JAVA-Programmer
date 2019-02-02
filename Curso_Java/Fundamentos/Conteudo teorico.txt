@@ -1,0 +1,287 @@
+https://www.eclipse.org/downloads/packages/
+
+https://www.oracle.com/technetwork/java/javase/overview/index.html
+
+
+Eclipse IDE for Enterprise Java Developers
+pode dezenvolver web
+
+Eclipse IDE for Java Developers
+so desenvolve
+____________
+
+sempre começa com Class
+
+ class PrimeiroPrograma {}--> é u para de bloco
+
+public class PrimeiroPrograma {
+
+}
+_____________
+jre - Java Runtime enviroment - o cliente precisa ter no seu computador
+_____________________
+
+JDR - Java developement Rit - eu preciso ter esse no computador (compilador +JRE)
+_______________________________
+
+quantas classes tem?
+é so procurar pelas letras maiusculas:
+Resposta: 3
+
+
+public class PrimeiroPrograma {
+	public static void main(String args[]) {
+		System.out.println("Exemplo de programa Java");
+	}
+}
+____________________________
+
+jvm: API JAVA - Biblioteca( monte de classes/arquivos)
+
+_____________
+tudo que está entre "chaves" { é um bloco
+
+___________
+metodo = estão acompanhado de parenteses o nome é o que tem antes do ( parenteses)
+
+__________________
+
+
+quando dentro do (  ) tem alguma coisa = isso é um parametro
+
+______________
+println ( xxxx) vai ser mostrado o que esta dentro
+
+exemplo:
+
+public class PrimeiroPrograma {
+	public static void main(String args[]) {
+		System.out.println("Exemplo de programa Java");
+		System.out.println("Codigo Fonte e Bytecode");
+		System.out.println();
+		System.out.println("JVM, JDK e JRE");
+
+
+executou;
+Exemplo de programa Java
+Codigo Fonte e Bytecode
+
+JVM, JDK e JRE
+
+________________
+
+ctrl barra de espaço = tecla magica 
+
+ex: main ctrl barra de espaço - nossas classes
+syso :ctrl barra de espaço
+
+
+
+public class SegundoPrograma {
+	public static void main(String[] args) {
+		System.out.println("Exemplo de teclas de atalho");
+
+
+
+___________________
+existem recomendações para nomear pacote
+
+ex: url escrita ao contrario...
+
+usuario
+impacta.com.br
+
+desenvolvedor
+br.com.impacta.programa
+
+resultado:
+
+package br.com.impacta.programa;
+
+public class Conceito {
+
+}
+
+________________
+
+
+JAR = Java Archieve --> arquivo compactado - equivalente a zip
+
+____________
+
+java.lang somente esse pacote posso ver sem precisar chamar o pacote, se quiser usar outro pacote teremos que fazer a importação do pacote.
+
+_______________
+public static void main(String[] args) { = testo em tela.
+
+__________________
+
+caixinha abaixo é feito por:
+
+importa pacote 
+
+import javax.swing.JOptionPane;
+
+
+	JOptionPane que fica na: javax.swing
+
+
+posso importar quantas classes eu quiser
+
+______________________
+
+JOptionPane.showMessageDialog(null,"Exemplo de pacotes");produziu um tela.
+
+
+__________________
+
+o que é uma variavel:  armazenar algum valor
+
+numericas:
+
+--> inteiras = não permite fracionar
+
+--> reais = permite fração
+
+alfa numerica:
+
+--> caracteres = com lida com 1 letra só/ 1 digito (femino ou masculino)
+
+--> texto = textos mais completos, variavel String.
+
+logicas:
+
+--> booleanas = verdadeiro ou falso, não cabe meio termo.;
+
+
+
+
+______________________________
+
+
+Tipos primitivos do JAVA
+byte 1 byte / 8 bits -128 a 127 (-27 a 27 - 1) Números inteiros Pode economizar memória em arrays extensas.
+short 2 bytes / 16 bits -32.768 a 32.767 (-215 a 215 - 1) Números inteiros Também pode ser usado para economizar memória em arrays extensas.
+int 4 bytes / 32 bits
+-2.147.483.648
+a
+2.147.483.647
+(-231 a 231 - 1)
+Números
+inteiros
+Geralmente, é o tipo padrão para
+valores inteiros. Possui extensão
+suficiente para a maior parte dos
+valores usados em um programa.
+long 8 bytes / 64 bits
+-9.223.372.036.854.775.808
+a
+9.223.372.036.854.775.807
+(-263 a 263 - 1)
+Números
+inteiros
+Quando for preciso usar valores
+maiores do que é possível em int,
+pode-se usar long, que é mais
+extenso.
+float 4 bytes / 32 bits
+-3.40292347e+38
+a
+3.40292347e+38
+Ponto flutuante
+Pode ser usado para economizar
+memória em arrays de ponto
+flutuante, mas não funciona para
+valores precisos.
+double 8 bytes / 64 bits Aproximadamente 1.79769313486231570E+308 Ponto flutuante Geralmente, é o tipo padrão para valores decimais. Também não funciona para valores precisos.
+char 2 bytes / 16 bits “\u0000” a “\uFFFF” Caracteres (Textual) Representa qualquer caractere alfanumérico, além de símbolos, a partir do padrão Unicode.
+boolean
+1 bit
+(pode variar
+conforme a
+implementação
+da JVM)
+true ou false Booleano
+Indica condições falsas ou
+verdadeiras. Representa um bit de
+informação, mas não tem tamanho
+definido
+
+______________________
+
+Declarando uma variável
+
+segue esse sentido:
+
+
+<tipo> <nomeVariável>;
+<tipo> <nomeVariável> = <valor>;
+<tipo> <nomeVariável1>, <nomeVariável2>;
+<tipo> <nomeVariável1> = <valor>, <nomeVariável2> = <valor>;
+
+________________________
+
+//variaveis duvidosas: soma
+
+		byte operando1 = 50;
+		byte operando2 = 50;
+		byte soma = operando1 + operando2;
+ele não compila pois não tem certeza se irá aber dentro do menos ou maior byte. não tem a garantia.
+
+ele so fecha a estrutura se puder ser fechada 
+
+/int é o inteiro padrão
+________________________
+
+
+		System.out.println(quantAlunos); 
+
+entre aspas é o que estara escrito exatamente
+quando está so em parenteses é o valor
+______________________
+
+
+
+		float peso1 = 10;
+		double peso2 = 10; - comporta o dobro de precisão do float
+
+________________________
+
+float peso3 = 10.2;
+float peso4 = 10.2;
+
+valor com qualquer ponto ele le como double
+
+________________________
+
+  "  " para string
+
+  '  ' para caracteres
+_________________________
+
+Caractere (ou sequência) de
+escape Descrição
+\’ Aspas simples (apóstrofo)
+\” Aspas duplas
+\\ Barra invertida
+\r Caractere de retorno
+\n Nova linha (alimentação de linha)
+\f Alimentação de formulário
+\t Tabulação
+\v Tabulação vertical
+\b Backspace
+
+______________________________
+
+	char linha ='\n'; = a barra e o n é equivalente ao "enter"
+_____________________________
+
+o JAVA utiliza a tabela Unicode (166iti)
+
+__________________________
+
+
+	System.out.println(resposta); - aparece abaixo
+
+		JOptionPane.showMessageDialog(null, resposta); aparece em janela 
+

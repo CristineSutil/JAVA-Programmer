@@ -1,0 +1,68 @@
+aula dia 02/02
+
+string - nome
+doble - numero
+
+	 */
+	String (escrita) nome = JOptionPane.showInputDialog("Nome do Funcionário");
+	double (numero)salario = Double.parseDouble(JOptionPane.showInputDialog("Salário"));
+	
+	double desconto = 0;
+	
+___________________________________
+stack --> Heap = memorias
+
+String nome ---> Jose
+
+
+
+_____________________
+ curso.toUpperCase());
+
+não da para executar o metodo numa avaliação nula
+_____________________
+
+
+todo String é constante ela nunca muda seu valor
+
+String resultado = "Nome: "+ nome; -> criando na memoria heap.
+resultado = "joão" sobrando tudo na memoria heap... ecesso de informação..
+
+existe 4 objetos constante
+
+resultado+= "silva" - não existe concatenização - outro objeto.
+
+
+resultado: "nome" - ele vai aproveitar o que ja tem na informação
+
+a partir do objeto nulos não podemos executar metodos 
+
+_____________________
+
+String s1 = "Java";
+String s2 = "Java";
+
+
+stack - 2 variaveis (s1 /s2)
+heap - 1 obj. (Java)
+
+
+
+
+String s1 = New String "Java";
+String s2 = New String "Java";
+
+
+stack - 2 variaveis (s1 /s2)
+heap - 2 obj. (Java e Java)
+
+______________________
+
+
+
+o operador == so compara valor qdo é primitivo 
+qdo é String o == compara referencias.
+
+
+
+
