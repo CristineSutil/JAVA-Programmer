@@ -67,9 +67,9 @@ ___________________
 do while ele executa no minimo 1 vez.e não sei o numero de repetição
 ___________________
 
+             Break <-----------------------------> continue
+sai da estrutura de repetiçao ----- ignora o resto e vai para o proximo passo
 
 
+_______________________________
 
-
-
-Do while 
