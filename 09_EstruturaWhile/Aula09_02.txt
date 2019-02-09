@@ -1,0 +1,75 @@
+		
+		int contador = 20;
+		while(contador > 10) {
+			System.out.println("Posição: "+ contador);
+			
+		}
+			System.out.println("----Finalizado-----");
+
+
+ficara infinitamente rodando
+
+while vc não tem como colocar contador mais mais
+
+
+importante o que ira fazer 
+
+_______________
+
+	int contador = 20;
+		while(contador > 10) {
+			System.out.println("Posição: "+ contador);
+			contador = contador -1;
+			
+
+duas operações
+__________________
+
+
+	
+		int contador = 20;
+		while(contador > 10) {
+			System.out.println("Posição: "+ contador);
+			contador--;
+
+
+resposta:
+
+Posição: 20
+Posição: 19
+Posição: 18
+Posição: 17
+Posição: 16
+Posição: 15
+Posição: 14
+Posição: 13
+Posição: 12
+Posição: 11
+----Finalizado-----
+_______________________
+
+
+ "+ contador--);primeiro o 20
+ "-- contador);primeiro o 11
+
+______________________
+
+int contador = (int)(Math.random() * 20); --->número aleatório
+________________________
+int contador não sei o numero 
+
+_________________
+
+
+
+while ela pode nunca ser executada pode ser falsa a primeira vez 
+___________________
+do while ele executa no minimo 1 vez.e não sei o numero de repetição
+___________________
+
+
+
+
+
+
+Do while 
