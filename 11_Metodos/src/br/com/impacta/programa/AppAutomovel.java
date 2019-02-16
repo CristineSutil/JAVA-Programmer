@@ -10,6 +10,7 @@ public class AppAutomovel {
 		
 		Automovel automovel = new Automovel();
 		automovel.atribuir("Ford", "Fusion", -2018);
+		automovel.setAno(-2017);
 		System.out.println(automovel.retornar());
 		JOptionPane.showMessageDialog(null, automovel.retornar());
 	
