@@ -1,0 +1,16 @@
+ 	
+
+para jogar na tela
+
+		System.out.println("curso1");
+		System.out.println("carga horaria " + curso1.carga_horaria);
+		System.out.println("descricao " + curso1.descricao);
+		System.out.println("Preço " + curso1.preco);
+	 
+descrição
+
+	Curso curso1 = new Curso();
+	 	curso1.descricao = "Java";
+	 	curso1.carga_horaria = 150;
+	 	curso1.preco = 1000.00;
+	 		

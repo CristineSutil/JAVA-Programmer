@@ -1,5 +1,7 @@
 package br.com.impacta.programa;
 
+import javax.swing.JOptionPane;
+
 import br.com.impacta.classes.Automovel;
 
 public class AppAutomovel {
@@ -8,7 +10,9 @@ public class AppAutomovel {
 		
 		Automovel automovel = new Automovel();
 		automovel.atribuir("Ford", "Fusion", -2018);
-		automovel.mostrar();
+		System.out.println(automovel.retornar());
+		JOptionPane.showMessageDialog(null, automovel.retornar());
+	
 		
 			
 		//automovel.marca = "Ford";
