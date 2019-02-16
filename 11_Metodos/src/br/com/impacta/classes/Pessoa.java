@@ -56,8 +56,8 @@ public class Pessoa {
 				"\nSexo: " + this.getSexo() +
 				"\nPeso: " + this.getPeso() +
 				"\nAltura: " + this.getAltura() +
-				"\n\n: " + 
-				(this.getEndereco() == null ? "Endereço não informado" : this.getEndereco().exibir());
+				"\n\n" + 
+				(this.getEndereco() == null ? "Endereço não informado" : this.getEndereco().exibir("Meus próprios dados"));
 		
 		return resultado;
 		

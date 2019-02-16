@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 import br.com.impacta.classes.Endereco;
 import br.com.impacta.classes.Pessoa;
 import br.com.impacta.enumeracoes.Sexo;
+import br.com.impacta.utilitarios.Calculos;
 
 public class AppPessoa {
  public static void main(String[] args) {
@@ -24,5 +25,9 @@ public class AppPessoa {
 	
 	JOptionPane.showMessageDialog(null, pessoa1.exibir());
 	
+	double soma = Calculos.calcularSoma(2, 3);
+	System.out.println("soma" + soma);
+	
  	}
-}
+ 
+ }

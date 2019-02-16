@@ -24,9 +24,20 @@ public class Endereco {
 			this.cidade = cidade;
 		}
 		public String exibir() {
-			String resposta = "DADOS DO ENDEREÇO: " + "\n\n Logradouro: " + this.getLogradouro() +
+			String resposta = "DADOS DO ENDEREÇO: " + "\n\nLogradouro: " + this.getLogradouro() +
 					"\nNúmero: " + this.getNumero() + "\nCidade: " + this.getCidade();
+			
 			return resposta;
 		}
 		
+		public String exibir(String titulo) {
+			String resposta = titulo + "\n\nLogradouro: " + this.getLogradouro() +
+					"\nNúmero: " + this.getNumero() + "\nCidade: " + this.getCidade();
+			
+			return resposta;
+		}
+		
+		
+		
+			
 	}
