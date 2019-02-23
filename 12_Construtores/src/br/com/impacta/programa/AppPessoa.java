@@ -5,16 +5,11 @@ import javax.swing.JOptionPane;
 import br.com.impacta.classes.Endereco;
 import br.com.impacta.classes.Pessoa;
 import br.com.impacta.enumeracoes.Sexo;
-import br.com.impacta.utilitarios.Calculos;
 
 public class AppPessoa {
 	public static void main(String[] args) {
-		Pessoa pessoa1 = new Pessoa();
-		pessoa1.setNome("Nestor");
-		pessoa1.setIdade(40);
-		pessoa1.setSexo(Sexo.MASCULINO);
-		pessoa1.setAltura(1.8);
-		pessoa1.setPeso(75);
+		//pessoa1
+		Pessoa pessoa1 = new Pessoa(Sexo.MASCULINO, 75, 1.8);
 		
 		Endereco endereco = new Endereco();
 		endereco.setLogradouro("Av Paulista");
@@ -23,10 +18,14 @@ public class AppPessoa {
 		
 		pessoa1.setEndereco(endereco);
 		
-		JOptionPane.showMessageDialog(null, pessoa1.exibir());	
+		JOptionPane.showMessageDialog(null, pessoa1.exibir());
 		
-		double soma = Calculos.calcularSoma(2, 3);
-		System.out.println("soma: " + soma);
+		//pessoa2
+		Pessoa pessoa2 = new 
+			Pessoa("Antenor", 30, Sexo.MASCULINO, 80, 1.8, endereco);
+		
+		JOptionPane.showMessageDialog(null, pessoa2.exibir());
+
 	}
 }
 

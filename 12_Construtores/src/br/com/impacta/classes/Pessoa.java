@@ -11,6 +11,41 @@ public class Pessoa {
 	private double altura;
 	private Endereco endereco;
 	
+	//construtores
+	public Pessoa(Sexo sexo, double peso, double altura) { 			
+		this.setSexo(sexo);
+		this.setPeso(peso);
+		this.setAltura(altura);		
+		this.setNome("não informado");		
+	}	
+	
+	public Pessoa(String nome, Sexo sexo, double peso, double altura) {		
+		this(sexo, peso, altura);		
+		this.setNome(nome);
+	}
+	
+	public Pessoa(String nome, 	//nome da pessoa
+			int idade, 			//idade da pessoa
+			Sexo sexo, 			//Sexo, que é um enum
+			double peso, 		//peso da pessoa, e deve ser positivo
+			double altura		//altura da pessoa, positiva
+			) {
+		this(nome, sexo, peso, altura);
+		this.setIdade(idade);
+	}
+	
+	public Pessoa(String nome, 
+			int idade, 
+			Sexo sexo, 
+			double peso, 
+			double altura, 
+			Endereco endereco) {
+		this(nome, idade, sexo, peso, altura);
+		this.setEndereco(endereco);
+	}
+	
+	
+	//getters e setters
 	public String getNome() {
 		return nome;
 	}
