@@ -6,6 +6,12 @@ public class Endereco {
 	private int numero;
 	private String cidade;
 	
+	public Endereco(String logradouro, int numero, String cidade) {
+		this.setLogradouro(logradouro);
+		this.setNumero(numero);
+		this.setCidade(cidade);
+	}
+	
 	public String getLogradouro() {
 		return logradouro;
 	}
